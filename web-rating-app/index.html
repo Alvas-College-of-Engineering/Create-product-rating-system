@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Pro | Product Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="accent">Rating</span>Pro
+            </div>
+            <nav>
+                <button id="add-product-btn" class="btn-secondary">Add Product</button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="dashboard-header">
+                <h1>Product Dashboard</h1>
+                <p>Manage and track customer feedback in real-time.</p>
+            </section>
+
+            <div id="product-grid" class="product-grid">
+                <!-- Products will be injected here -->
+            </div>
+        </main>
+
+        <div id="modal-overlay" class="modal-overlay hidden">
+            <div class="modal-content">
+                <button id="close-modal" class="close-btn">&times;</button>
+                <div id="modal-body">
+                    <!-- Modal content dynamic -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
